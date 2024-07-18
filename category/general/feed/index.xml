@@ -18,15 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.5.5</generator>
-
-<image>
-	<url>/wp-content/uploads/2024/06/Logosmall1.gif</url>
-	<title>General &#8211; Aventurguia</title>
-	<link></link>
-	<width>32</width>
-	<height>32</height>
-</image> 
+	<generator>https://wordpress.org/?v=6.6</generator>
 	<item>
 		<title>Crafting Captivating Headlines: Your awesome post title goes here</title>
 		<link>/post-1/</link>
