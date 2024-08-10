@@ -19,14 +19,28 @@
         // Recorrer todas las imágenes
         for (var i = 0; i < images.length; i++) {
             var img = images[i];
+
             // Verificar si la src contiene la cadena a reemplazar
             if (img.src.includes('/wordpress/wp-content/plugins/gtranslate/flags/32/es.png')) {
                 // Reemplazar la cadena en la src
                 img.src = img.src.replace('/wordpress/wp-content/plugins/gtranslate/flags/32/es.png', '/wp-content/plugins/gtranslate/flags/32/es.png');
             }
+
+            // Verificar si la src contiene la cadena a reemplazar para en-us
+            if (img.src.includes('/wordpress/wp-content/plugins/gtranslate/flags/32/en-us.png')) {
+                // Reemplazar la cadena en la src
+                img.src = img.src.replace('/wordpress/wp-content/plugins/gtranslate/flags/32/en-us.png', '/wp-content/plugins/gtranslate/flags/32/en-us.png');
+            }
+
+            // Verificar si la data-gt-lazy-src contiene la cadena a reemplazar para en-us
+            if (img.getAttribute('data-gt-lazy-src') && img.getAttribute('data-gt-lazy-src').includes('/wordpress/wp-content/plugins/gtranslate/flags/32/en-us.png')) {
+                // Reemplazar la cadena en data-gt-lazy-src
+                img.setAttribute('data-gt-lazy-src', img.getAttribute('data-gt-lazy-src').replace('/wordpress/wp-content/plugins/gtranslate/flags/32/en-us.png', '/wp-content/plugins/gtranslate/flags/32/en-us.png'));
+            }
         }
     });
 </script>
+
 
 <script>
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.1"}};
