@@ -109,7 +109,7 @@
     }
     widget_css += '.gt_float_switcher .gt_options.gt-open{opacity:1;transform:translateX(0px)}';
 
-    widget_css += '.gt_float_switcher .gt_options::-webkit-scrollbar-track{background-color:#f5f5f5}';3
+    widget_css += '.gt_float_switcher .gt_options::-webkit-scrollbar-track{background-color:#f5f5f5}';
     widget_css += '.gt_float_switcher .gt_options::-webkit-scrollbar{width:5px}';
     widget_css += '.gt_float_switcher .gt_options::-webkit-scrollbar-thumb{background-color:#888}';
     widget_css += '.gt_float_switcher .gt_options a:hover{background:#6070a0;color:#fff}';

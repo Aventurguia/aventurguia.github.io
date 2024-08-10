@@ -10,38 +10,6 @@
 <link rel="alternate" type="application/rss+xml" title="Aventurguia &raquo; Feed" href="/feed/">
 <link rel="alternate" type="application/rss+xml" title="Aventurguia &raquo; RSS de los comentarios" href="/comments/feed/">
 <script>
-    // Esperar a que todo el DOM esté cargado
-    document.addEventListener('DOMContentLoaded', function() {
-        // Obtener todas las imágenes en la página
-        var images = document.getElementsByTagName('img');
-
-        // Recorrer todas las imágenes
-        for (var i = 0; i < images.length; i++) {
-            var img = images[i];
-
-            // Verificar si la src contiene la cadena a reemplazar
-            if (img.src.includes('/wordpress/wp-content/plugins/gtranslate/flags/32/es.png')) {
-                // Reemplazar la cadena en la src
-                img.src = img.src.replace('/wordpress/wp-content/plugins/gtranslate/flags/32/es.png', '/wp-content/plugins/gtranslate/flags/32/es.png');
-            }
-
-            // Verificar si la src contiene la cadena a reemplazar para en-us
-            if (img.src.includes('/wordpress/wp-content/plugins/gtranslate/flags/32/en-us.png')) {
-                // Reemplazar la cadena en la src
-                img.src = img.src.replace('/wordpress/wp-content/plugins/gtranslate/flags/32/en-us.png', '/wp-content/plugins/gtranslate/flags/32/en-us.png');
-            }
-
-            // Verificar si la data-gt-lazy-src contiene la cadena a reemplazar para en-us
-            if (img.getAttribute('data-gt-lazy-src') && img.getAttribute('data-gt-lazy-src').includes('/wordpress/wp-content/plugins/gtranslate/flags/32/en-us.png')) {
-                // Reemplazar la cadena en data-gt-lazy-src
-                img.setAttribute('data-gt-lazy-src', img.getAttribute('data-gt-lazy-src').replace('/wordpress/wp-content/plugins/gtranslate/flags/32/en-us.png', '/wp-content/plugins/gtranslate/flags/32/en-us.png'));
-            }
-        }
-    });
-</script>
-
-
-<script>
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.1"}};
 /*! This file is auto-generated */
 !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🐦‍⬛","🐦​⬛")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
@@ -104,13 +72,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="stylesheet" id="wpsm_tabs_r_bootstrap-front-css" href="/wp-content/plugins/tabs-responsive/assets/css/bootstrap-front.css?ver=6.6.1" media="all">
 <link rel="stylesheet" id="wpsm_tabs_r_animate-css" href="/wp-content/plugins/tabs-responsive/assets/css/animate.css?ver=6.6.1" media="all">
 <link rel="stylesheet" id="wp-live-chat-support-css" href="/wp-content/plugins/wp-live-chat-support/public/css/wplc-plugin-public.css?ver=10.0.13" media="all">
-<link rel="stylesheet" id="uag-style-1520-css" href="/wp-content/uploads/uag-plugin/assets/2000/uag-css-1520.css?ver=1723248318" media="all">
+<link rel="stylesheet" id="uag-style-1520-css" href="/wp-content/uploads/uag-plugin/assets/2000/uag-css-1520.css?ver=1723253819" media="all">
 <link rel="stylesheet" id="elementor-frontend-css" href="/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.22.2" media="all">
 <link rel="stylesheet" id="swiper-css" href="/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
 <link rel="stylesheet" id="elementor-post-7-css" href="/wp-content/uploads/elementor/css/post-7.css?ver=1721354026" media="all">
 <link rel="stylesheet" id="elementor-pro-css" href="/wp-content/plugins/pro-elements/assets/css/frontend-lite.min.css?ver=3.22.0" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="/wp-content/uploads/elementor/css/global.css?ver=1721354027" media="all">
-<link rel="stylesheet" id="elementor-post-1520-css" href="/wp-content/uploads/elementor/css/post-1520.css?ver=1723248808" media="all">
+<link rel="stylesheet" id="elementor-post-1520-css" href="/wp-content/uploads/elementor/css/post-1520.css?ver=1723253294" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.6.1" media="all">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <!--[if IE]>
@@ -160,10 +128,36 @@ flexibility(document.documentElement);
 
 <a class="skip-link screen-reader-text" href="#content" role="link" title="Ir al contenido">
 		Ir al contenido</a>
-	
-	
-      
 
+	<script>// Esperar a que todo el DOM esté cargado
+    document.addEventListener('DOMContentLoaded', function() {
+        // Obtener todas las imágenes en la página
+        var images = document.getElementsByTagName('img');
+
+        // Recorrer todas las imágenes
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+
+            // Verificar si la src contiene la cadena a reemplazar
+            if (img.src.includes('/wordpress/wp-content/plugins/gtranslate/flags/32/es.png')) {
+                // Reemplazar la cadena en la src
+                img.src = img.src.replace('/wordpress/wp-content/plugins/gtranslate/flags/32/es.png', '/wp-content/plugins/gtranslate/flags/32/es.png');
+            }
+
+            // Verificar si la src contiene la cadena a reemplazar para en-us
+            if (img.src.includes('/wordpress/wp-content/plugins/gtranslate/flags/32/en-us.png')) {
+                // Reemplazar la cadena en la src
+                img.src = img.src.replace('/wordpress/wp-content/plugins/gtranslate/flags/32/en-us.png', '/wp-content/plugins/gtranslate/flags/32/en-us.png');
+            }
+
+            // Verificar si la data-gt-lazy-src contiene la cadena a reemplazar para en-us
+            if (img.getAttribute('data-gt-lazy-src') && img.getAttribute('data-gt-lazy-src').includes('/wordpress/wp-content/plugins/gtranslate/flags/32/en-us.png')) {
+                // Reemplazar la cadena en data-gt-lazy-src
+                img.setAttribute('data-gt-lazy-src', img.getAttribute('data-gt-lazy-src').replace('/wordpress/wp-content/plugins/gtranslate/flags/32/en-us.png', '/wp-content/plugins/gtranslate/flags/32/en-us.png'));
+            }
+        }
+    });</script>
+	
 <div class="hfeed site" id="page">
 			<header class="site-header header-main-layout-1 ast-primary-menu-enabled ast-logo-title-inline ast-hide-custom-menu-mobile ast-builder-menu-toggle-icon ast-mobile-header-inline" id="masthead" itemtype="https://schema.org/WPHeader" itemscope="itemscope" itemid="#masthead">
 			<div id="ast-desktop-header" data-toggle-type="dropdown">
@@ -388,6 +382,10 @@ flexibility(document.documentElement);
 			<style>/*! elementor - v3.22.0 - 24-06-2024 */
 .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>										<img fetchpriority="high" decoding="async" width="523" height="800" src="/wp-content/uploads/2024/08/CanoningPortada.png" class="attachment-medium_large size-medium_large wp-image-1458" alt="">													</div>
 				</div>
+				<div class="elementor-element elementor-element-d8cbe43 elementor-widget elementor-widget-heading" data-id="d8cbe43" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Recorrido</h3>		</div>
+				</div>
 				<div class="elementor-element elementor-element-b3cff6c elementor-widget elementor-widget-html" data-id="b3cff6c" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
 			<div class="container">
@@ -441,6 +439,10 @@ flexibility(document.documentElement);
 </div>
 </div>		</div>
 				</div>
+				<div class="elementor-element elementor-element-618b5b6 elementor-widget elementor-widget-heading" data-id="618b5b6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Galería</h3>		</div>
+				</div>
 				<div class="elementor-element elementor-element-22a07cd elementor-widget elementor-widget-html" data-id="22a07cd" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
 			<div class="gallery">
@@ -452,6 +454,18 @@ flexibility(document.documentElement);
     <img decoding="async" src="/wp-content/uploads/2024/08/Chispero-6.png" alt="Imagen 6" class="gallery-item">
 </div>
 		</div>
+				</div>
+				<div class="elementor-element elementor-element-796b066 elementor-widget elementor-widget-heading" data-id="796b066" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Ubicación</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-266b26c elementor-widget elementor-widget-google_maps" data-id="266b26c" data-element_type="widget" data-widget_type="google_maps.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.22.0 - 24-06-2024 */
+.elementor-widget-google_maps .elementor-widget-container{overflow:hidden}.elementor-widget-google_maps .elementor-custom-embed{line-height:0}.elementor-widget-google_maps iframe{height:300px}</style>		<div class="elementor-custom-embed">
+			<iframe loading="lazy" src="https://maps.google.com/maps?q=vereda%20vallejuelo&#038;t=m&#038;z=15&#038;output=embed&#038;iwloc=near" title="vereda vallejuelo" aria-label="vereda vallejuelo"></iframe>
+		</div>
+				</div>
 				</div>
 				</div>
 				</div>
@@ -688,7 +702,7 @@ flexibility(document.documentElement);
 	</footer><!-- #colophon -->
 	</div>
 <!-- #page -->
-<div class="gtranslate_wrapper" id="gt-wrapper-30714587"></div>
+<div class="gtranslate_wrapper" id="gt-wrapper-35587810"></div>
 <div id="ast-scroll-top" tabindex="0" class="ast-scroll-top-icon ast-scroll-to-top-right" data-on-devices="both">
 	<span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
                 <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
@@ -792,7 +806,7 @@ wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
 <script src="/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
 <script id="starter-templates-zip-preview-js-extra">var starter_templates_zip_preview = {"AstColorPaletteVarPrefix":"--ast-global-color-","AstEleColorPaletteVarPrefix":["ast-global-color-0","ast-global-color-1","ast-global-color-2","ast-global-color-3","ast-global-color-4","ast-global-color-5","ast-global-color-6","ast-global-color-7","ast-global-color-8"]};</script>
 <script src="/wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js?ver=06758d4d807d9d22c6ea" id="starter-templates-zip-preview-js"></script>
-<script id="gt_widget_script_30714587-js-before">window.gtranslateSettings = /* document.write */ window.gtranslateSettings || {};window.gtranslateSettings['30714587'] = {"default_language":"es","languages":["en","es"],"url_structure":"none","flag_style":"3d","wrapper_selector":"#gt-wrapper-30714587","alt_flags":{"en":"usa"},"float_switcher_open_direction":"top","switcher_horizontal_position":"right","switcher_vertical_position":"top","custom_css":"#gt_float_wrapper {margin: 75px 0 0 0;}","flags_location":"\/wordpress\/wp-content\/plugins\/gtranslate\/flags\/"};</script><script src="/wp-content/plugins/gtranslate/js/float.js?ver=6.6.1" data-no-optimize="1" data-no-minify="1" data-gt-orig-url="/wordpress/canoning-chispero/" data-gt-orig-domain="localhost" data-gt-widget-id="30714587" defer></script><script src="/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min.js?ver=3.22.0" id="elementor-pro-webpack-runtime-js"></script>
+<script id="gt_widget_script_35587810-js-before">window.gtranslateSettings = /* document.write */ window.gtranslateSettings || {};window.gtranslateSettings['35587810'] = {"default_language":"es","languages":["en","es"],"url_structure":"none","flag_style":"3d","wrapper_selector":"#gt-wrapper-35587810","alt_flags":{"en":"usa"},"float_switcher_open_direction":"top","switcher_horizontal_position":"right","switcher_vertical_position":"top","custom_css":"#gt_float_wrapper {margin: 75px 0 0 0;}","flags_location":"\/wordpress\/wp-content\/plugins\/gtranslate\/flags\/"};</script><script src="/wp-content/plugins/gtranslate/js/float.js?ver=6.6.1" data-no-optimize="1" data-no-minify="1" data-gt-orig-url="/wordpress/canoning-chispero/" data-gt-orig-domain="localhost" data-gt-widget-id="35587810" defer></script><script src="/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min.js?ver=3.22.0" id="elementor-pro-webpack-runtime-js"></script>
 <script src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.22.2" id="elementor-webpack-runtime-js"></script>
 <script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.22.2" id="elementor-frontend-modules-js"></script>
 <script id="elementor-pro-frontend-js-before">var ElementorProFrontendConfig = {"ajaxurl":"\/wp-admin\/admin-ajax.php","nonce":"1b912fe4a7","urls":{"assets":"\/wp-content\/plugins\/pro-elements\/assets\/","rest":"\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"es_CO","app_id":""},"lottie":{"defaultAnimationUrl":"\/wp-content\/plugins\/pro-elements\/modules\/lottie\/assets\/animations\/default.json"}};</script>
